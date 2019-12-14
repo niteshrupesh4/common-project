@@ -10,7 +10,7 @@ import { Child2Component } from '../child2/child2.component';
 export class ParentComponent implements OnInit {
   title = 'app';
   componentRef: any;
-  @ViewChild('loadComponent', { read: ViewContainerRef }) entry: ViewContainerRef;
+  @ViewChild('loadComponent', { read: ViewContainerRef, static: false }) entry: ViewContainerRef;
   constructor(private resolver: ComponentFactoryResolver) { }
   
    data = [

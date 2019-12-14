@@ -12,4 +12,8 @@ export class DataService {
   getData(data: number) {
     return this.http.get(this.localUrl + data);
   }
+
+  getList(){
+    return this.http.get("https://api.myjson.com/bins/lgzfc");
+  }
 }
