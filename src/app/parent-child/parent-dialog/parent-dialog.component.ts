@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { DataService } from "src/app/_service/data.service";
 import { MatDialog } from '@angular/material';
 import { ChildDialogComponent } from '../child-dialog/child-dialog.component';
+import { DataService } from '../../_service/data.service';
 
 @Component({
   selector: "app-parent-dialog",
